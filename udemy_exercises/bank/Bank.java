@@ -44,8 +44,8 @@ public class Bank {
     if (branch != null) {
       System.out.println("The Customers for branch " + branch.getName() + "-");
       ArrayList<Customer> branchCustomers = branch.getCustomers();
-      for (int i = 0; i < this.branches.size(); i++) {
-        Customer eachCustomer = branchCustomers.get(i);
+      for (Customer i : branchCustomers) {
+        Customer eachCustomer = i;
         System.out.println("Customer: " + eachCustomer.getName());
         if (showTransactions) {
           ArrayList<Double> transactions = eachCustomer.getTransactions();
