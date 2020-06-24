@@ -27,18 +27,3 @@ public class Statically {
         explain();
     }
 }
-
-// getGlue() {
-//     return glue;
-// }
-
-// moveAndShake() {
-//     console.log("Never stagnate in life.  Be agile, change, and improve...");
-// }
-
-// static stubborn() {
-//     // this.moveAndShake();
-//     console.log("Please don't make me change... I just don't like it...");
-// }
-
-// static explain() {
