@@ -1,16 +1,25 @@
-package udemy_exercises.cell_phone;
+public class Contact {
+    private String name;
+    private int number;
 
-class Contact {
+    public Contact(String name, int number) {
+        this.name = name;
+        this.number = number;
+    }
 
+    public void setContact(int newNumber) {
+        this.number = newNumber;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getPhoneNumber() {
+        return this.number;
+    }
+
+    public static Contact createContact(String name, int number) {
+        return new Contact(name, number);
+    }
 }
-
-
-/*
-    - **Contact Class:**
-        - Name
-        - Phone number
-        - saveContact()
-        - modifyContact()
-        - searchContact()
-        - removeContact()
-*/
